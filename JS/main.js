@@ -6,6 +6,7 @@ document.addEventListener("keydown", function(event){
     jump();
 });
 
+
 //Функция jump, которая добавляет класс "jump" элементу #dino
 function jump(){
     if (dino.classList != "jump"){
@@ -22,7 +23,7 @@ let isAlive = setInterval(function(){
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
 
 
-    if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140){
+    if(cactusLeft < 50 && cactusLeft > 0 && dinoTop <= 140){
         alert("Game Over");
     }
 }, 10);

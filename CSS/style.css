@@ -45,8 +45,8 @@
 }
 
 .jump {
-  -webkit-animation: jump 1s linear;
-          animation: jump 1s linear;
+  -webkit-animation: jump .5s linear;
+          animation: jump .5s linear;
 }
 
 @-webkit-keyframes jump {
